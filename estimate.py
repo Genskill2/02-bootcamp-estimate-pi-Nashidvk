@@ -13,8 +13,8 @@ def monte_carlo(n):
 	c_points=0
 	s_points=0
 	for i in range(n):
-		x=random.random(-1,1)
-		y=random.random(-1,1)
+		x=random()
+		y=random()
 		if x**2+y**2 <=1:
 			c_points+=1
 			s_points+=1
