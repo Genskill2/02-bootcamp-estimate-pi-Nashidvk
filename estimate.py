@@ -1,6 +1,6 @@
 import math
 import unittest
-from random import *
+import random
 
 def wallis(n):
 	pi = 1
@@ -13,8 +13,8 @@ def monte_carlo(n):
 	c_points=0
 	s_points=0
 	for i in range(n):
-		x=random()
-		y=random()
+		x=random.uniform(-1,1)
+		y=random.uniform(-1,1)
 		if x**2+y**2 <=1:
 			c_points+=1
 			s_points+=1
